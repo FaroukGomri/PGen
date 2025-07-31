@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Farouk Gomri">
+    <title>PGen - Password Generator</title>
+
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="assets/js/script.js"></script>
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+        <div>
+        <h3 class="float-md-start mb-0 text-info fw-bold">PGen</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+        </div>
+    </header>
+
+    <main class="px-3">
+        <h1 class="mb-3">Create a Secure Password</h1>
+        <p class="lead">Generate a strong and reliable password with one click. Ideal for securing your online accounts, systems, or sensitive data.</p>
+
+        <div class="seed-container">
+        <input 
+          type="password" 
+          id="seedInput" 
+          class="seed-input" 
+          placeholder="Enter your secret seed phrase"
+        >
+      </div>
+
+        <div>
+            <button class="btn btn-lg btn-secondary fw-bold border-white bg-white text-dark" onclick="GeneratePassword()">Generate Password</button>
+            <div id="passwordResult" class="password-box" onclick="CopyToClipboard()">Your generated password will appear here...</div>
+        </div>
+
+        <div class="text-start">
+            <h2>How It Works</h2>
+            <p>This tool creates a strong 32-character password based on a custom phrase (called a <strong>seed</strong>). You can regenerate your password anytime using the same seed — no need to save or remember the actual password.</p>
+
+            <ul>
+            <li><strong>Reproducible:</strong> The same seed always produces the same password.</li>
+            <li><strong>Secure:</strong> Password includes uppercase, lowercase, digits, and symbols.</li>
+            <li><strong>No storage:</strong> Nothing is saved or tracked — the password is generated on the fly.</li>
+            </ul>
+
+            <p class="text-warning"><strong>Important:</strong> Do not share your seed. Anyone who knows it can generate your password.</p>
+        </div>
+    </main>
+    <footer class="mt-auto text-white-50">
+            <p>Made with ❤️ by Farouk Gomri</p>
+    </footer>
+    </div>
+  </body>
+</html>

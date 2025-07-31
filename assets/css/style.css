@@ -1,0 +1,103 @@
+/* Default Button Override */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none;
+}
+
+/* Body Background */
+body {
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+/* Layout */
+.cover-container {
+  max-width: 42em;
+}
+
+/* Navigation */
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/* Password Box Styling */
+.password-box {
+  font-size: 1.25rem;
+  word-break: break-all;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #ffffff;
+  margin-top: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 1px;
+}
+
+/* Seed Input Styling */
+    .seed-container {
+      position: relative;
+      margin-bottom: 25px;
+    }
+
+    .seed-input {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: white;
+      padding: 15px 50px 15px 15px;
+      border-radius: 8px;
+      font-size: 1rem;
+      width: 100%;
+      transition: all 0.3s ease;
+    }
+
+    .seed-input::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .seed-input:focus {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.3);
+      color: white;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.3);
+    }
+
+/* How It Works Section */
+.text-start h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.text-start ul {
+  padding-left: 1.2rem;
+}
+
+.text-start li {
+  margin-bottom: 0.75rem;
+}
+
+.text-warning {
+  color: #ffc107 !important;
+}
